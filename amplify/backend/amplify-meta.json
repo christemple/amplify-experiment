@@ -1,0 +1,58 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplifyexperiment-20181109121827-authRole",
+			"UnauthRoleArn": "arn:aws:iam::224191861867:role/amplifyexperiment-20181109121827-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::224191861867:role/amplifyexperiment-20181109121827-authRole",
+			"Region": "eu-west-1",
+			"DeploymentBucketName": "amplifyexperiment-20181109121827-deployment",
+			"UnauthRoleName": "amplifyexperiment-20181109121827-unauthRole",
+			"StackName": "amplifyexperiment-20181109121827",
+			"StackId": "arn:aws:cloudformation:eu-west-1:224191861867:stack/amplifyexperiment-20181109121827/90372ad0-e419-11e8-869c-50faeb4288d2"
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplifyexperiment-20181109121827-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2018-11-09T16:04:55.722Z",
+			"output": {
+				"S3BucketSecureURL": "https://amplifyexperiment-20181109122122--hostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://amplifyexperiment-20181109122122--hostingbucket.s3-website-eu-west-1.amazonaws.com",
+				"Region": "eu-west-1",
+				"HostingBucketName": "amplifyexperiment-20181109122122--hostingbucket",
+				"CloudFrontSecureURL": "https://d13s3ijn1eqk5r.cloudfront.net",
+				"CloudFrontDistributionID": "E18UDBCZ2EL11J",
+				"CloudFrontDomainName": "d13s3ijn1eqk5r.cloudfront.net"
+			},
+			"lastPushDirHash": "7ndO9kIknMV6AIZ7v9t8DpcNYw4="
+		}
+	},
+	"auth": {
+		"amplifyExperiment": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplifyexperiment-20181109121827-deployment/amplify-cfn-templates/auth/amplifyExperiment-cloudformation-template.yml",
+				"logicalId": "authamplifyExperiment"
+			},
+			"lastPushTimeStamp": "2018-11-09T16:04:55.719Z",
+			"output": {
+				"AppClientSecret": "11gq7kgpb74ijtc3ssa3g9qieel7bgo57n31d8epjgvh6q9ds95i",
+				"UserPoolId": "eu-west-1_fjoig2eUY",
+				"AppClientIDWeb": "59jqfebc4vgjdkjbvq3ldpkaka",
+				"AppClientID": "6gk36sdlf1187p5c09iedq47vc",
+				"FacebookWebClient": "543668029390989",
+				"IdentityPoolId": "eu-west-1:fac0595b-5d08-480c-8d39-cc071d5afc61",
+				"IdentityPoolName": "amplifyexperiment7e950f46_identitypool_7e950f46",
+				"UserPoolName": "amplifyexperiment7e950f46_userpool_7e950f46"
+			},
+			"lastPushDirHash": "h7RO4hkONPe/L9qLfM1Jd0xI6ck=",
+			"[object Object]": {}
+		}
+	}
+}
